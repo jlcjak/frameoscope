@@ -8,7 +8,8 @@
 	(property "Reference" "REF**"
 		(at 0 -2.28 0)
 		(layer "F.SilkS")
-		(uuid "b4e32ff5-4b70-4bb5-8ce3-a53234f36daa")
+		(hide yes)
+		(uuid "96ecc27d-155f-4ca7-9cad-72118456cb95")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +20,8 @@
 	(property "Value" "R_1210_3225Metric"
 		(at 0 2.28 0)
 		(layer "F.Fab")
-		(uuid "3d9f0530-5b1e-46c9-aae1-1fab04c3132f")
+		(hide yes)
+		(uuid "be5a8520-144b-43dd-85f2-8d4413ac84b2")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +33,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1ac9713f-dc17-48cc-90a5-1c4a0b94b3fa")
+		(uuid "f9e72f74-229e-47e0-a386-74d97adc407d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1f928006-1cf4-4c24-bd6e-02153ee3b802")
+		(uuid "c4302638-a33c-43f0-8d8a-1aa6612df336")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -59,7 +61,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "1329e31c-6e69-4241-a5da-ebfbef105c7d")
+		(uuid "fec574fe-c4f5-4632-97ae-b8b9cb9e01c3")
 	)
 	(fp_line
 		(start -0.723737 1.355)
@@ -69,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "dd7a60f9-f0a8-4a99-9956-c0a0b0c0fb40")
+		(uuid "762771a3-a7df-4c53-8bac-1beaa1d22abb")
 	)
 	(fp_rect
 		(start -2.28 -1.58)
@@ -80,7 +82,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "73eb0e70-1a54-4d3c-a76b-95a1a7acc80d")
+		(uuid "4a50032b-c5aa-4466-a68b-a672d8af9820")
 	)
 	(fp_rect
 		(start -1.6 -1.245)
@@ -91,32 +93,21 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "4df60da2-5821-4cee-9850-cde54680aace")
-	)
-	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
-		(layer "F.Fab")
-		(uuid "91c4a9e7-d44e-4bef-99eb-a4a99b1dd2f0")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
+		(uuid "1a70933d-c8f3-4da0-9d9c-4d6bc82d905d")
 	)
 	(pad "1" smd roundrect
 		(at -1.4625 0)
 		(size 1.125 2.65)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.222222)
-		(uuid "2a15d959-8be9-4e16-949b-5583a00806a8")
+		(uuid "f549d80c-b64d-46c4-af4e-84293975f88a")
 	)
 	(pad "2" smd roundrect
 		(at 1.4625 0)
 		(size 1.125 2.65)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.222222)
-		(uuid "a5e88678-7772-4fd4-be45-e6234fdeb665")
+		(uuid "c5a2022a-a8e4-42e5-b67f-992a1989a8c3")
 	)
 	(embedded_fonts no)
 	(embedded_files
