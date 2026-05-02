@@ -5994,6 +5994,12 @@
 		(uuid "6b7d73aa-82d0-481d-b989-790aaf6a9a52")
 	)
 	(junction
+		(at 91.44 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bb845fe-1d9a-4f7a-9a64-0e225bd8a79b")
+	)
+	(junction
 		(at 227.33 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7442,6 +7448,16 @@
 			(type default)
 		)
 		(uuid "43370fa7-9e90-4ee5-b3ac-851b9b6e2913")
+	)
+	(wire
+		(pts
+			(xy 91.44 27.94) (xy 91.44 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b52939-389f-4b60-8c77-1d672a132256")
 	)
 	(wire
 		(pts
@@ -17049,6 +17065,81 @@
 			(project "framework_oscilloscope"
 				(path "/cf9cb3b7-94d2-4f59-bc33-73600a6e7599"
 					(reference "#PWR0306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "framework_oscilloscope:GND")
+		(at 91.44 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a8639672-7dc5-45df-8f7e-f1dbc8416db1")
+		(property "Reference" "#PWR027"
+			(at 91.44 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.567 33.6042 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4892e666-9b82-46bd-8a2c-ce98aeadddcb")
+		)
+		(instances
+			(project "framework_oscilloscope"
+				(path "/cf9cb3b7-94d2-4f59-bc33-73600a6e7599"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
