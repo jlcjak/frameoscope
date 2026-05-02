@@ -17378,7 +17378,7 @@
 		(layer "Edge.Cuts")
 		(uuid "eb37e933-197c-4fc8-82d7-4b0a9dce5bc8")
 	)
-	(gr_text "STACKUP: JLC04161H_3313"
+	(gr_text "STACKUP: JLC04081H-7628"
 		(at 45.45 31.725 0)
 		(layer "F.SilkS")
 		(uuid "8e5ac669-8ca4-4c1d-a243-3cbc0e682542")
