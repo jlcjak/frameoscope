@@ -5964,6 +5964,12 @@
 		(uuid "57e18e57-08c4-4555-acb2-e94041f871f1")
 	)
 	(junction
+		(at 243.84 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b725e19-ea64-4a4f-8a7a-a45b9d95909a")
+	)
+	(junction
 		(at 243.84 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6322,6 +6328,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1ac03ac-371d-4e5d-a210-1148d19fafa8")
+	)
+	(junction
+		(at 247.65 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2267005-69ae-4d19-b6a2-04c1b9730650")
 	)
 	(junction
 		(at 48.26 132.08)
@@ -6810,6 +6822,16 @@
 			(type default)
 		)
 		(uuid "15f5279c-947d-43a6-b221-5fbbba42ae50")
+	)
+	(wire
+		(pts
+			(xy 247.65 156.21) (xy 247.65 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "165abbb7-4fae-472f-86f0-95b99463d221")
 	)
 	(wire
 		(pts
@@ -8023,7 +8045,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 151.13) (xy 236.22 151.13)
+			(xy 247.65 151.13) (xy 243.84 151.13)
 		)
 		(stroke
 			(width 0)
@@ -9103,7 +9125,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 153.67) (xy 247.65 160.02)
+			(xy 247.65 153.67) (xy 247.65 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9210,6 +9232,16 @@
 			(type default)
 		)
 		(uuid "eb02061b-7e8f-43ff-bb08-2949023875d3")
+	)
+	(wire
+		(pts
+			(xy 243.84 156.21) (xy 247.65 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec9325a4-6dbb-4d36-8063-7bde4a9f377d")
 	)
 	(wire
 		(pts
@@ -9330,6 +9362,16 @@
 			(type default)
 		)
 		(uuid "f5999a42-54aa-4c2d-987b-8fc69dcc04ba")
+	)
+	(wire
+		(pts
+			(xy 243.84 151.13) (xy 236.22 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f60f7f31-36ef-4d42-a275-d5efb03552df")
 	)
 	(polyline
 		(pts
@@ -11179,7 +11221,7 @@
 		(dnp no)
 		(uuid "05f52e0b-b4da-422f-b02a-2a5124a950ec")
 		(property "Reference" "C25"
-			(at 195.834 164.846 90)
+			(at 189.484 165.354 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11189,8 +11231,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
-			(at 193.294 167.386 90)
+		(property "Value" "100nF"
+			(at 201.422 165.354 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15311,6 +15353,86 @@
 			(project "framework_oscilloscope"
 				(path "/cf9cb3b7-94d2-4f59-bc33-73600a6e7599"
 					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "framework_oscilloscope:C_Small")
+		(at 243.84 153.67 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "735a2201-82ff-44c9-9ffe-9973aea036c4")
+		(property "Reference" "C47"
+			(at 241.554 154.178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 241.808 151.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "framework_oscilloscope:0402_1005Metric_CAP"
+			(at 243.84 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 243.84 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c26a50ae-29ce-4571-8e6c-70f1a290a5f1")
+		)
+		(pin "1"
+			(uuid "24b5fa03-c9ae-449c-80e3-43d906751fc7")
+		)
+		(instances
+			(project "framework_oscilloscope"
+				(path "/cf9cb3b7-94d2-4f59-bc33-73600a6e7599"
+					(reference "C47")
 					(unit 1)
 				)
 			)
