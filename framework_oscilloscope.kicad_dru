@@ -1,0 +1,4 @@
+(version 1)
+(rule General_min_clearance
+	(constraint clearance (min 0.1mm))
+)

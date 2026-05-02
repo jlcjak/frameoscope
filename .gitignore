@@ -1,0 +1,103 @@
+# ==========================================================
+# KiCad – Temporary / Local Files
+# ==========================================================
+
+# Specific files dump
+libs.bak
+
+# Local assistant/runtime artifacts
+.codex
+.codex/
+
+# Old local snapshots / manual history folders
+.history/
+.history_old/
+.history_trim/
+.history*/
+
+# Legacy/generated files from older KiCad versions or local exports
+*-cache.lib
+/framework_oscilloscope.lib
+/framework_oscilloscope.pro
+/framework_oscilloscope.sch
+/meta/
+
+# Lock files (created while files are open)
+*.lck
+
+# Local project settings (window layout, UI state)
+*.kicad_prl
+
+# Autosave / backup files
+*_autosave-*
+*.sch-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*.bck
+*.tmp
+
+# KiCad backup directories
+*-backups/
+
+# Cache files
+fp-info-cache
+*.3dshapes-cache/
+
+# ==========================================================
+# Generated Outputs (Do NOT version these)
+# ==========================================================
+
+# Fabrication outputs
+*.gbr
+*.drl
+*.zip
+*.rpt
+*.pos
+*.csv
+*.pdf
+
+# 3D exports
+*.step
+*.stp
+*.wrl
+
+# Netlists / XML exports
+*.net
+*.xml
+
+# BOM exports (if auto-generated)
+*BOM*.csv
+*BOM*.xlsx
+
+# ==========================================================
+# Python / Plugins (if you script KiCad)
+# ==========================================================
+
+__pycache__/
+*.pyc
+
+# ==========================================================
+# IDE / Editor
+# ==========================================================
+
+.vscode/
+.idea/
+
+# ==========================================================
+# OS Junk
+# ==========================================================
+
+.DS_Store
+Thumbs.db
+
+# ==========================================================
+# Optional: Generated folders (recommended structure)
+# Uncomment if you use these folders
+# ==========================================================
+
+# fabrication/
+# production/
+# exports/
+# plots/
+# output/

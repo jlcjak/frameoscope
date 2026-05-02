@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "framework_oscilloscope") (type "KiCad") (uri "${KIPRJMOD}/framework_oscilloscope.kicad_sym") (options "") (descr "Project-local symbols"))
+)
