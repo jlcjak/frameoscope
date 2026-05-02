@@ -2,3 +2,9 @@
 (rule General_min_clearance
 	(constraint clearance (min 0.1mm))
 )
+(rule usb2_diff
+	(constraint track_width (min 0.141mm) (opt 0.141mm) (max 0.141mm))
+	(constraint diff_pair_gap (min 0.15mm) (opt 0.15mm) (max 0.15mm))
+	(constraint diff_pair_uncoupled (max 1mm))
+	(condition "A.hasNetclass('USB2')")
+)
