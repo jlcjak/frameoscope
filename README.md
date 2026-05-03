@@ -17,7 +17,7 @@ oscilloscope expansion card / module for framework laptops
 
 ## manufacturing
 - The board can be made for <30$ @2, including assembly and components
-- all components are sourcable from jlc
+- all components are sourcable from lcsc, for easy assembly in china
 - passives don't have part numbers yet, some caps and resistors require high specs
 
 ![Alt text](frameoscope_sch.png)
