@@ -17,7 +17,7 @@ oscilloscope expansion card / module for framework laptops
 - There is no flash on the fpga so you need to reprogram it on reset or use iCE nvcm
 
 ## manufacturing
-- The board can be made for <30$ @2, including assembly and components
+- The board can be made for ~40$ @2, including assembly and components, using jlcpcb
 - all components are sourcable from lcsc, for easy assembly in china
 - passives don't have part numbers yet, some caps and resistors require high specs
 
