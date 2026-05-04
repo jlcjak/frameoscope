@@ -6827,6 +6827,12 @@
 		(uuid "2fb32a10-086d-4ef8-bc53-5315a00bbf35")
 	)
 	(junction
+		(at 140.97 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3141de47-410b-45e9-b812-c60012a78961")
+	)
+	(junction
 		(at 243.84 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6939,12 +6945,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b725e19-ea64-4a4f-8a7a-a45b9d95909a")
-	)
-	(junction
-		(at 140.97 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5bb1da29-e5ba-455e-9031-cea1f01d3bdf")
 	)
 	(junction
 		(at 243.84 229.87)
@@ -12554,7 +12554,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 133.35 145.034 90)
+			(at 133.858 145.034 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22696,7 +22696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "220pF"
 			(at 263.398 243.078 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23315,7 +23315,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33R"
+		(property "Value" "75R"
 			(at 259.588 234.188 90)
 			(show_name no)
 			(do_not_autoplace no)
