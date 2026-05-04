@@ -21,5 +21,5 @@ oscilloscope expansion card / module for framework laptops
 - all components are sourcable from lcsc, for easy assembly in china
 - passives don't have part numbers yet, some caps and resistors require high specs
 
-![Alt text](frameoscope_sch.png)
+![Alt text](frameoscope_schematic.png)
 ![Alt text](frameoscope_3d.png)
