@@ -8,3 +8,7 @@
 	(constraint diff_pair_uncoupled (max 1mm))
 	(condition "A.hasNetclass('USB2')")
 )
+(rule _3v3_polygon_clearance
+	(constraint clearance (min 0.9mm))
+	(condition "A.Type == 'Zone' && A.NetName == '+3V3' && A.Layer == 'B.Cu' && B.Type == 'Track'")
+)
