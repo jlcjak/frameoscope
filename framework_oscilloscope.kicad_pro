@@ -609,11 +609,11 @@
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
-          "label": "Qty",
+          "label": "Quantity",
           "name": "${QUANTITY}",
           "show": true
         },
@@ -649,7 +649,7 @@
         },
         {
           "group_by": false,
-          "label": "MANUFACTURER PART NUMBER",
+          "label": "Manufacturer Part Number",
           "name": "MANUFACTURER PART NUMBER",
           "show": true
         },

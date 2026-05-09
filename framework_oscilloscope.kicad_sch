@@ -11491,7 +11491,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5k1R"
 			(at 67.31 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11525,6 +11525,17 @@
 		)
 		(property "Description" ""
 			(at 62.23 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402FR-075K1L"
+			(at 62.23 41.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11611,6 +11622,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9a330ca-066c-4b6a-9c24-48b0b216a8ac")
 		)
@@ -11678,6 +11700,17 @@
 		)
 		(property "Description" ""
 			(at 67.31 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 67.31 44.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11762,6 +11795,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 254 295.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "framework_oscilloscope"
 				(path "/cf9cb3b7-94d2-4f59-bc33-73600a6e7599"
@@ -11835,6 +11879,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 254 304.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "framework_oscilloscope"
 				(path "/cf9cb3b7-94d2-4f59-bc33-73600a6e7599"
@@ -11900,6 +11955,17 @@
 		)
 		(property "Description" ""
 			(at 241.3 298.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 241.3 298.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11984,6 +12050,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 229.87 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "038b69a3-0f04-471b-8349-fb66ec1fb4ab")
 		)
@@ -12052,6 +12129,17 @@
 		)
 		(property "Description" ""
 			(at 229.87 304.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 229.87 304.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12136,6 +12224,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 241.3 304.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8540d4d0-b694-4204-b574-faaeb6b41f16")
 		)
@@ -12203,6 +12302,17 @@
 		)
 		(property "Description" ""
 			(at 224.79 304.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 224.79 304.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12286,6 +12396,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 58.42 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d6648e80-032a-42b2-950c-835c244dd27f")
 		)
@@ -12354,6 +12475,17 @@
 		)
 		(property "Description" ""
 			(at 190.5 232.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RT0402BRD074K12L"
+			(at 190.5 232.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12440,6 +12572,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 254 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "c58468e2-8cdc-452f-b894-a1a582a571bf")
 		)
@@ -12508,6 +12651,17 @@
 		)
 		(property "Description" ""
 			(at 22.86 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A475KP8NNNC"
+			(at 22.86 134.62 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12587,6 +12741,17 @@
 		)
 		(property "Description" ""
 			(at 133.35 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 133.35 147.32 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12675,6 +12840,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05B104KO5NNNC"
+			(at 194.31 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "14adebc5-25fc-48c0-b2eb-29988ad27a24")
 		)
@@ -12753,6 +12929,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 82.55 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "5fd12fe6-2057-4dbc-a491-afc20e36c363")
 		)
@@ -12821,6 +13008,17 @@
 		)
 		(property "Description" ""
 			(at 113.03 295.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CC0402JRNPO9BN101"
+			(at 113.03 295.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12907,6 +13105,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 22.86 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2c9cdbb0-62e6-413d-9871-5a0986820f6f")
 		)
@@ -12974,6 +13183,17 @@
 		)
 		(property "Description" ""
 			(at 247.65 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 247.65 139.7 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13283,6 +13503,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c578f80c-50c0-4005-8b8c-0c34bac9de91")
 		)
@@ -13359,6 +13590,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 62.23 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "1209a146-967f-4ade-a198-52340798494c")
 		)
@@ -13427,6 +13669,17 @@
 		)
 		(property "Description" ""
 			(at 44.45 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A475KP8NNNC"
+			(at 44.45 172.72 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13514,6 +13767,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 125.73 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f5678252-9ed1-4893-8ea2-23f4aefa7fcf")
 		)
@@ -13592,6 +13856,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 233.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "682ffc8a-c422-4706-9e3b-8ed68ee7b7e7")
 		)
@@ -13660,6 +13935,17 @@
 		)
 		(property "Description" ""
 			(at 151.13 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 151.13 134.62 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13746,6 +14032,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 140.97 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "9dfe42a4-92af-45cc-b661-dd2981133737")
 		)
@@ -13815,6 +14112,17 @@
 		)
 		(property "Description" ""
 			(at 209.55 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 209.55 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13902,6 +14210,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 251.46 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e9e0b548-c6b9-4bb3-8a14-9ba4080dac0a")
 		)
@@ -13981,6 +14300,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 132.08 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bb96dd8e-c46b-42d2-a434-135d4b43193e")
 		)
@@ -14049,6 +14379,17 @@
 		)
 		(property "Description" ""
 			(at 58.42 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A475KP8NNNC"
+			(at 58.42 149.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14136,6 +14477,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "RT0402FRE071KL"
+			(at 168.91 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5d7b8101-071c-4448-bf57-f16610fb5150")
 		)
@@ -14207,6 +14559,17 @@
 		)
 		(property "Description" ""
 			(at 52.07 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402FR-07100RL"
+			(at 52.07 147.32 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14294,6 +14657,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 124.46 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "23548dce-fd32-42f0-9972-f84b34944e49")
 		)
@@ -14373,6 +14747,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "AT0402DRD073K32L"
+			(at 190.5 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "97f6bf69-12d8-4688-b32a-8c6b53fa63f5")
 		)
@@ -14444,6 +14829,17 @@
 		)
 		(property "Description" ""
 			(at 125.73 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 125.73 149.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14633,6 +15029,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 34.29 309.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "49b576f1-d6c0-4dda-85d2-7ecef22d1410")
 		)
@@ -14700,6 +15107,17 @@
 		)
 		(property "Description" ""
 			(at 44.45 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 44.45 175.26 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14783,6 +15201,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 195.58 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "93007907-04cc-4cb9-a31e-a904e3ce79eb")
 		)
@@ -14850,6 +15279,17 @@
 		)
 		(property "Description" ""
 			(at 134.62 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 134.62 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14933,6 +15373,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 265.43 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "7d491c13-182c-4bff-83e0-b240dc84311b")
 		)
@@ -15000,6 +15451,17 @@
 		)
 		(property "Description" ""
 			(at 21.59 288.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 21.59 288.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15083,6 +15545,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 193.04 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "53a24b93-b0ed-4a78-94c1-d8ef5c47bb84")
 		)
@@ -15152,6 +15625,17 @@
 		)
 		(property "Description" ""
 			(at 222.25 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 222.25 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15238,6 +15722,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "0edf9161-16bb-4780-a082-d53585e4f963")
 		)
@@ -15306,6 +15801,17 @@
 		)
 		(property "Description" ""
 			(at 261.62 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 261.62 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15490,6 +15996,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 128.27 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "382f5ce6-2c17-4024-ae5e-f74af6aff1b0")
 		)
@@ -15560,6 +16077,17 @@
 		)
 		(property "Description" ""
 			(at 135.89 288.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 135.89 288.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15643,6 +16171,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 190.5 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9de7f051-3fea-417d-8605-45de1c8cbbd1")
 		)
@@ -15712,6 +16251,17 @@
 		)
 		(property "Description" ""
 			(at 243.84 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 243.84 115.57 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15800,6 +16350,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 250.19 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a2becb0e-d263-4760-97df-2b143e02ed47")
 		)
@@ -15872,6 +16433,17 @@
 		)
 		(property "Description" ""
 			(at 200.66 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 200.66 181.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15958,6 +16530,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 82.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5a5f7dd1-b450-4d62-bfcc-534c7a765dec")
 		)
@@ -16025,6 +16608,17 @@
 		)
 		(property "Description" ""
 			(at 215.9 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 215.9 57.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16101,6 +16695,17 @@
 		)
 		(property "Description" ""
 			(at 110.49 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-072K2L"
+			(at 110.49 63.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16189,6 +16794,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 215.9 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3ea5c375-26b7-4745-853b-ddd2bf5d1bc5")
 		)
@@ -16267,6 +16883,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 276.86 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "02685346-4b09-4e9a-b462-c919b929dc60")
 		)
@@ -16335,6 +16962,17 @@
 		)
 		(property "Description" ""
 			(at 119.38 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 119.38 57.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16423,6 +17061,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 194.31 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1dbe40d5-b0c6-44dd-9499-6a38c23bcc10")
 		)
@@ -16501,6 +17150,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 152.4 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "11f00e55-9701-41f1-9475-c9d3f5059fcb")
 		)
@@ -16570,6 +17230,17 @@
 		)
 		(property "Description" ""
 			(at 243.84 227.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 243.84 227.33 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16658,6 +17329,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 156.21 300.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b3fb9459-da79-49e6-905a-5fbb0b9b03f5")
 		)
@@ -16730,6 +17412,17 @@
 		)
 		(property "Description" ""
 			(at 43.18 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 43.18 139.7 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17047,6 +17740,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 50.8 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "74e8a4c0-7124-4607-ade0-4c3bf0f80204")
 		)
@@ -17119,6 +17823,17 @@
 		)
 		(property "Description" ""
 			(at 132.08 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A475KP8NNNC"
+			(at 132.08 132.08 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17205,6 +17920,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 204.47 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "43d6cb57-be5d-40d8-a98e-ece3c97183ab")
 		)
@@ -17274,6 +18000,17 @@
 		)
 		(property "Description" ""
 			(at 207.01 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 207.01 181.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17362,6 +18099,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05B104KO5NNNC"
+			(at 243.84 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c26a50ae-29ce-4571-8e6c-70f1a290a5f1")
 		)
@@ -17434,6 +18182,17 @@
 		)
 		(property "Description" ""
 			(at 234.95 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 234.95 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17520,6 +18279,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 250.19 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "be137407-0bb8-43a3-9a94-215f5542fa1b")
 		)
@@ -17588,6 +18358,17 @@
 		)
 		(property "Description" ""
 			(at 220.98 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 220.98 181.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17674,6 +18455,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 265.43 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "48813c6a-66c0-44cd-8da4-d846e3ae7daa")
 		)
@@ -17749,6 +18541,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 135.89 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "d69a920c-eb19-4fea-9e85-1dacacc44bba")
 		)
@@ -17816,6 +18619,17 @@
 		)
 		(property "Description" ""
 			(at 172.72 311.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 172.72 311.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17988,6 +18802,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 209.55 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "429513d5-67df-4407-abd0-fdf7012a55fd")
 		)
@@ -18056,6 +18881,17 @@
 		)
 		(property "Description" ""
 			(at 120.65 306.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402FR-0720KL"
+			(at 120.65 306.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18143,6 +18979,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 134.62 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b0fd032c-3f78-4a6e-8725-632b8deaae04")
 		)
@@ -18213,6 +19060,17 @@
 		)
 		(property "Description" ""
 			(at 200.66 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 200.66 213.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18298,6 +19156,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 228.6 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "25457a46-b2bc-45b9-9213-3e3777a91ca0")
 		)
@@ -18368,6 +19237,17 @@
 		)
 		(property "Description" ""
 			(at 154.94 242.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 154.94 242.57 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18678,6 +19558,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 278.13 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1f387a78-a2bb-4091-90f0-5af19b8ae656")
 		)
@@ -18745,6 +19636,17 @@
 		)
 		(property "Description" ""
 			(at 60.96 309.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 60.96 309.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18821,6 +19723,17 @@
 		)
 		(property "Description" ""
 			(at 227.33 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 227.33 181.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18907,6 +19820,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 266.7 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "64cd1542-579c-440f-814d-22696c1a3ae9")
 		)
@@ -18974,6 +19898,17 @@
 		)
 		(property "Description" ""
 			(at 135.89 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 135.89 186.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19057,6 +19992,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 106.68 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4892e666-9b82-46bd-8a2c-ce98aeadddcb")
 		)
@@ -19124,6 +20070,17 @@
 		)
 		(property "Description" ""
 			(at 156.21 293.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 156.21 293.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19208,6 +20165,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 190.5 295.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "27cda5ea-7997-45cd-be09-bab8f310ae97")
 		)
@@ -19275,6 +20243,17 @@
 		)
 		(property "Description" ""
 			(at 134.62 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 134.62 33.02 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19360,6 +20339,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 106.68 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2ac4b486-cfc2-4626-94a9-400863d80533")
 		)
@@ -19430,6 +20420,17 @@
 		)
 		(property "Description" ""
 			(at 134.62 309.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 134.62 309.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19615,6 +20616,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 241.3 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bc43cc54-5194-4982-9fec-82376021baf6")
 		)
@@ -19686,6 +20698,17 @@
 		)
 		(property "Description" ""
 			(at 110.49 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 110.49 57.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19772,6 +20795,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 148.59 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "25446e9e-c5d2-4c47-8733-9bac4428565e")
 		)
@@ -19841,6 +20875,17 @@
 		)
 		(property "Description" ""
 			(at 50.8 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 50.8 172.72 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19919,6 +20964,17 @@
 		)
 		(property "Description" ""
 			(at 199.39 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 199.39 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20093,6 +21149,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 203.2 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2b0682e5-22a5-4ad8-bf42-74f7dabda50a")
 		)
@@ -20160,6 +21227,17 @@
 		)
 		(property "Description" ""
 			(at 236.22 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 236.22 149.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20340,6 +21418,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "RC0402FR-0775RL"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e47af582-846f-4b62-9ec3-1e11ee567ff4")
 		)
@@ -20410,6 +21499,17 @@
 		)
 		(property "Description" ""
 			(at 137.16 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 137.16 17.78 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20494,6 +21594,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 17.78 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "2cb6e457-ac03-4264-b3d5-95945ee8879b")
 		)
@@ -20562,6 +21673,17 @@
 		)
 		(property "Description" ""
 			(at 266.7 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 266.7 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20746,6 +21868,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 34.29 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4c89feab-82ad-49f0-931e-0c128bf96d40")
 		)
@@ -20825,6 +21958,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 132.08 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eabc4516-0b07-466a-ad21-e38e741e7591")
 		)
@@ -20894,6 +22038,17 @@
 		)
 		(property "Description" ""
 			(at 132.08 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A475KP8NNNC"
+			(at 132.08 190.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21072,6 +22227,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-072K2L"
+			(at 134.62 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "924cc422-a320-40ad-bef1-2d2f9de28e2b")
 		)
@@ -21150,6 +22316,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 128.27 309.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5ae12fd4-ce8a-49a3-99cb-026c66909eb1")
 		)
@@ -21219,6 +22396,17 @@
 		)
 		(property "Description" ""
 			(at 275.59 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05B104KO5NNNC"
+			(at 275.59 58.42 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21306,6 +22494,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A475KP8NNNC"
+			(at 36.83 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f0d32c1d-a1c8-4c6d-87fc-bf4a201bc6cd")
 		)
@@ -21378,6 +22577,17 @@
 		)
 		(property "Description" ""
 			(at 64.77 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 64.77 149.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21619,6 +22829,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 125.73 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "33c96292-80c0-42c2-9282-7afdcc4f5ae0")
 		)
@@ -21689,6 +22910,17 @@
 		)
 		(property "Description" ""
 			(at 120.65 309.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 120.65 309.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21774,6 +23006,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 190.5 300.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f527a947-1bd2-49ea-867e-a631a574c5d8")
 		)
@@ -21845,6 +23088,17 @@
 		)
 		(property "Description" ""
 			(at 52.07 295.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402JR-0710KL"
+			(at 52.07 295.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21933,6 +23187,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 212.09 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "afde4359-000a-43dc-803d-ec94d904be79")
 		)
@@ -21970,7 +23235,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "90.9kR"
+		(property "Value" "90k9R"
 			(at 118.364 292.862 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22004,6 +23269,17 @@
 		)
 		(property "Description" ""
 			(at 120.65 295.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402FR-0790K9L"
+			(at 120.65 295.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22091,6 +23367,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 233.68 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1558f8c0-ffcd-4a3d-8d63-980063e91b5d")
 		)
@@ -22161,6 +23448,17 @@
 		)
 		(property "Description" ""
 			(at 92.71 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 92.71 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22331,6 +23629,17 @@
 		)
 		(property "Description" ""
 			(at 256.54 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 256.54 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22662,6 +23971,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 241.3 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "223675dd-4959-452c-b91d-9a3746e9701c")
 		)
@@ -22730,6 +24050,17 @@
 		)
 		(property "Description" ""
 			(at 266.7 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CC0402JRNPO9BN221"
+			(at 266.7 240.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22816,6 +24147,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 247.65 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "30ed2f4d-71f6-4443-a8b2-3b520d8a5928")
 		)
@@ -22883,6 +24225,17 @@
 		)
 		(property "Description" ""
 			(at 146.05 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 146.05 137.16 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22960,6 +24313,17 @@
 		)
 		(property "Description" ""
 			(at 265.43 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "CL05B104KO5NNNC"
+			(at 265.43 58.42 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23047,6 +24411,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "ERA2AEB123X"
+			(at 138.43 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2fd49561-305e-48ef-9507-cb39df6193c2")
 		)
@@ -23125,6 +24500,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 50.8 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "47d9929c-d6f8-436d-a439-04941aa37672")
 		)
@@ -23193,6 +24579,17 @@
 		)
 		(property "Description" ""
 			(at 243.84 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 243.84 120.65 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23278,6 +24675,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 29.21 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dc515911-a830-434a-a306-91f6980da397")
 		)
@@ -23349,6 +24757,17 @@
 		)
 		(property "Description" ""
 			(at 257.81 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" "RC0402FR-0775RL"
+			(at 257.81 236.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23437,6 +24856,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL05A105KO5NNNC"
+			(at 77.47 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5ebe5f24-3710-4b9f-b0a2-761d6f2d63ac")
 		)
@@ -23515,6 +24945,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 36.83 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin ""
 			(uuid "c5ea2a00-7292-4839-a8f3-0dac578ac147")
 		)
@@ -23582,6 +25023,17 @@
 		)
 		(property "Description" ""
 			(at 27.94 309.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 27.94 309.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23666,6 +25118,17 @@
 				)
 			)
 		)
+		(property "MANUFACTURER PART NUMBER" "CL10A106MQ8NNNC"
+			(at 27.94 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "77f669c7-6ce2-4266-8ce3-edb2ac084372")
 		)
@@ -23736,6 +25199,17 @@
 		)
 		(property "Description" ""
 			(at 119.38 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER PART NUMBER" ""
+			(at 119.38 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
