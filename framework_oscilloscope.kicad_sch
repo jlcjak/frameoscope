@@ -14705,7 +14705,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k32R"
+		(property "Value" "3k3R"
 			(at 188.214 236.982 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14747,7 +14747,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER PART NUMBER" "AT0402DRD073K32L"
+		(property "MANUFACTURER PART NUMBER" "RT0402BRD073K3L"
 			(at 190.5 240.03 0)
 			(hide yes)
 			(show_name no)
@@ -23684,7 +23684,7 @@
 				)
 			)
 		)
-		(property "Value" "LM4040C20IDBZT"
+		(property "Value" "LM4040D20IDBZR"
 			(at 265.684 145.034 0)
 			(show_name yes)
 			(do_not_autoplace no)
@@ -23725,7 +23725,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER PART NUMBER" "LM4040C20IDBZT"
+		(property "MANUFACTURER PART NUMBER" "LM4040D20IDBZR"
 			(at 252.476 129.54 0)
 			(hide yes)
 			(show_name yes)
