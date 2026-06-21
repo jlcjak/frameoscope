@@ -18,7 +18,7 @@ Here is how to use it:
 
 That's it, now ngscopeclient should see frameoscope as an oscilloscope
 
-to uninstall: `curl -fsSL frame.fasterscope.com/uinstall.sh | bash`
+to uninstall: `curl -fsSL frame.fasterscope.com/uninstall.sh | bash`
 
 this works on ubuntu 24, for other distros clone this repo and ask codex(/your agent of choice) to make it work
 
