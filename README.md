@@ -20,7 +20,7 @@ That's it, now ngscopeclient should see frameoscope as an oscilloscope
 
 to uninstall: `curl -fsSL frame.fasterscope.com/uinstall.sh | bash`
 
-this works on ubuntu, for other distros clone this repo and ask codex(/your agent of choice) to make it work
+this works on ubuntu 24, for other distros clone this repo and ask codex(/your agent of choice) to make it work
 
 The script installs, starts and enables a service that will flash frameoscope upon insertion
 and start a bridge that translates the stream into ngscopeclient compatible packets
