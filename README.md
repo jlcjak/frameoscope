@@ -16,6 +16,8 @@ Here is how to use it:
 1. install [ngscopeclient](https://github.com/ngscopeclient/scopehal-apps/releases/)
 2. run: `curl -fsSL frame.fasterscope.com/install.sh | bash` (Source code in "/software")
 
+That's it, now ngscopeclient should see frameoscope as an oscilloscope
+
 to uninstall: `curl -fsSL frame.fasterscope.com/uinstall.sh | bash`
 
 this works on ubuntu, for other distros clone this repo and ask codex(/your agent of choice) to make it work
@@ -35,3 +37,4 @@ and start a bridge that translates the stream into ngscopeclient compatible pack
 ![Alt text](frameoscope_schematic.png)
 ![Alt text](ngscopeclient_screenshot.png)
 ![Alt text](frameoscope_render.png)
+![Alt text](image_real.png)
