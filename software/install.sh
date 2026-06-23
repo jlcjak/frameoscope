@@ -7,7 +7,8 @@ SERVICE_NAME="frameoscope-ngscope.service"
 SAMPLE_RATE="${SAMPLE_RATE:-40000000}"
 INSTALL_DEPS=1
 START_SERVICE=1
-PROGRAM_EEPROM=0
+TAG_DEVICES=1
+REFRESH_TAGGED=0
 TMP_DIR=""
 
 usage() {
@@ -22,8 +23,9 @@ Options:
                      Default: https://frame.fasterscope.com
   --no-deps          Do not install OS packages with apt-get.
   --no-start         Install but do not enable/start the systemd service.
-  --program-eeprom   Also persistently configure the FT232H EEPROM as FIFO/D2XX.
-                     Use this only for boards you intend to ship in this mode.
+  --no-tag           Do not tag connected FT232H devices.
+  --refresh-tagged   Rewrite already-tagged Frameoscope EEPROM descriptors too.
+  --program-eeprom   Compatibility alias for --refresh-tagged.
   -h, --help         Show this help.
 
 After install, use this ngscopeclient connection string:
@@ -67,8 +69,14 @@ while [[ $# -gt 0 ]]; do
         --no-start)
             START_SERVICE=0
             ;;
+        --no-tag)
+            TAG_DEVICES=0
+            ;;
+        --refresh-tagged)
+            REFRESH_TAGGED=1
+            ;;
         --program-eeprom)
-            PROGRAM_EEPROM=1
+            REFRESH_TAGGED=1
             ;;
         -h|--help)
             usage
@@ -94,6 +102,9 @@ else
 fi
 if [[ "${#SUDO[@]}" -gt 0 ]]; then
     "${SUDO[@]}" -v
+fi
+if command -v systemctl >/dev/null 2>&1; then
+    "${SUDO[@]}" systemctl stop "${SERVICE_NAME}" 2>/dev/null || true
 fi
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
@@ -139,10 +150,14 @@ fi
 "${SUDO[@]}" "${APP_DIR}/venv/bin/python" -m pip install --upgrade pip wheel
 "${SUDO[@]}" "${APP_DIR}/venv/bin/python" -m pip install --upgrade pyftdi pyusb
 
-if [[ "${PROGRAM_EEPROM}" -eq 1 ]]; then
-    echo "Programming FT232H EEPROM. This is persistent."
+if [[ "${TAG_DEVICES}" -eq 1 ]]; then
+    TAG_ARGS=(tag-devices --yes)
+    if [[ "${REFRESH_TAGGED}" -eq 1 ]]; then
+        TAG_ARGS+=(--refresh-tagged)
+    fi
+    echo "Tagging currently connected FT232H devices as Frameoscope if needed."
     "${SUDO[@]}" "${APP_DIR}/venv/bin/python" \
-        "${APP_DIR}/frameoscope-service.py" program-eeprom --yes
+        "${APP_DIR}/frameoscope-service.py" "${TAG_ARGS[@]}"
 fi
 
 "${SUDO[@]}" groupadd -f plugdev
@@ -168,8 +183,8 @@ rm -f "${UNIT_TMP}"
 
 UDEV_TMP="$(mktemp)"
 cat > "${UDEV_TMP}" <<EOF
-# Frameoscope FT232H. Starts the bridge service on plug-in and grants local raw USB access.
-ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6014", GROUP="plugdev", MODE="0660", TAG+="uaccess", TAG+="systemd", ENV{SYSTEMD_WANTS}+="${SERVICE_NAME}"
+# Frameoscope FT232H. Starts the bridge service only for devices tagged in FTDI EEPROM.
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6014", ATTR{product}=="Frameoscope*", GROUP="plugdev", MODE="0660", TAG+="uaccess", TAG+="systemd", ENV{SYSTEMD_WANTS}+="${SERVICE_NAME}"
 EOF
 "${SUDO[@]}" install -m 0644 "${UDEV_TMP}" /etc/udev/rules.d/99-frameoscope-ngscope.rules
 rm -f "${UDEV_TMP}"
@@ -196,6 +211,10 @@ fi
 cat <<EOF
 
 Frameoscope runtime installed.
+
+Connected FT232H devices are tagged by EEPROM product string on install.
+The background service only flashes/runs devices whose USB product starts with
+"Frameoscope".
 
 ngscopeclient connection string:
   frameoscope:dslabs:twinlan:localhost:5025:5026

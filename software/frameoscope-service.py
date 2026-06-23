@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
+import secrets
 import shutil
 import signal
 import subprocess
@@ -15,6 +17,11 @@ from pathlib import Path
 VID = 0x0403
 PID = 0x6014
 DEFAULT_URL = "ftdi://ftdi:232h/1"
+FRAMEOSCOPE_PRODUCT_PREFIX = "Frameoscope"
+FRAMEOSCOPE_PRODUCT = "Frameoscope 40MSPS"
+FRAMEOSCOPE_MANUFACTURER = "FasterScope"
+GENERIC_PRODUCT = "Single RS232-HS"
+GENERIC_MANUFACTURER = "FTDI"
 
 ADBUS_SCK = 0x01
 ADBUS_MOSI = 0x02
@@ -125,26 +132,76 @@ def import_ftdi():
     return Ftdi
 
 
-def device_present() -> bool:
+def is_frameoscope_product(product: str | None) -> bool:
+    return bool(product and product.startswith(FRAMEOSCOPE_PRODUCT_PREFIX))
+
+
+def safe_name(text: str) -> str:
+    return re.sub(r"[^A-Za-z0-9_.-]+", "_", text)[:80] or "unknown"
+
+
+def make_serial() -> str:
+    return "FS" + secrets.token_hex(4).upper()
+
+
+def list_ft232h_devices() -> list[dict[str, object]]:
+    Ftdi = import_ftdi()
     try:
-        import usb.core
-    except Exception:
-        return False
-    return usb.core.find(idVendor=VID, idProduct=PID) is not None
+        found = Ftdi.list_devices("ftdi://ftdi:232h/?")
+    except Exception as exc:
+        log(f"FT232H enumeration failed: {exc}")
+        return []
+
+    devices: list[dict[str, object]] = []
+    single = len(found) == 1
+    for index, (desc, interface) in enumerate(found, 1):
+        serial = getattr(desc, "sn", None) or ""
+        product = getattr(desc, "description", None) or ""
+        if serial:
+            url = f"ftdi://ftdi:232h:{serial}/1"
+        elif single:
+            url = DEFAULT_URL
+        else:
+            url = None
+        devices.append({
+            "index": index,
+            "url": url,
+            "serial": serial,
+            "product": product,
+            "bus": getattr(desc, "bus", None),
+            "address": getattr(desc, "address", None),
+            "interface": interface,
+            "tagged": is_frameoscope_product(product),
+        })
+    return devices
 
 
-def wait_for_device(poll_s: float) -> bool:
+def find_frameoscope_url() -> str | None:
+    devices = [d for d in list_ft232h_devices() if d["tagged"]]
+    if not devices:
+        return None
+    if len(devices) > 1:
+        log("multiple tagged Frameoscope devices found; using the first one")
+    url = devices[0]["url"]
+    if not isinstance(url, str):
+        log("tagged Frameoscope device has no serial and cannot be selected safely")
+        return None
+    return url
+
+
+def wait_for_frameoscope_url(poll_s: float) -> str | None:
     announced = False
     while not stopping:
-        if device_present():
+        url = find_frameoscope_url()
+        if url:
             if announced:
-                log("FT232H detected")
-            return True
+                log("tagged Frameoscope FT232H detected")
+            return url
         if not announced:
-            log(f"waiting for FT232H {VID:04x}:{PID:04x}")
+            log("waiting for tagged Frameoscope FT232H")
             announced = True
         time.sleep(poll_s)
-    return False
+    return None
 
 
 class Ice40MpsseProgrammer:
@@ -266,10 +323,11 @@ def run_service(args: argparse.Namespace) -> int:
     log("ready for ngscopeclient connection: frameoscope:dslabs:twinlan:localhost:5025:5026")
 
     while not stopping:
-        if not wait_for_device(args.poll_seconds):
+        url = wait_for_frameoscope_url(args.poll_seconds)
+        if not url:
             break
         try:
-            flash_fpga(args.url, args.spi_frequency)
+            flash_fpga(url, args.spi_frequency)
         except Exception as exc:
             log(f"flash failed: {exc}; retrying")
             time.sleep(args.retry_seconds)
@@ -298,51 +356,141 @@ def run_service(args: argparse.Namespace) -> int:
     return 0
 
 
-def program_eeprom(args: argparse.Namespace) -> int:
+def open_eeprom(url: str, size: int):
     try:
         from pyftdi.eeprom import FtdiEeprom
-        from usb.core import USBError
     except Exception as exc:
-        die(f"missing pyftdi/pyusb EEPROM support: {exc}")
-
-    if not args.yes:
-        die("EEPROM programming is persistent. Re-run with --yes if this board should be configured.")
-
+        die(f"missing pyftdi EEPROM support: {exc}")
     ee = FtdiEeprom()
-    ee.open(args.url, size=args.size)
-    try:
-        stamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        backup = APP_DIR / f"ft232h-eeprom-before-{stamp}.bin"
-        backup.write_bytes(bytes(ee.data))
-        log(f"saved EEPROM backup to {backup}")
+    ee.open(url, size=size)
+    return ee
 
-        props = ee.properties
-        if args.initialize or not props:
-            log("initializing EEPROM image before applying FIFO settings")
-            ee._eeprom[:] = b"\x00" * len(ee._eeprom)
-            ee.initialize()
-            ee.set_property("power_max", args.power_max)
-            ee.set_property("self_powered", False)
-            ee.set_property("remote_wakeup", False)
-            ee.set_property("suspend_pull_down", False)
-            ee.set_property("out_isochronous", False)
-            ee.set_property("in_isochronous", False)
+
+def backup_eeprom(ee, label: str) -> Path:
+    stamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
+    backup = APP_DIR / f"ft232h-eeprom-before-{safe_name(label)}-{stamp}.bin"
+    backup.write_bytes(bytes(ee.data))
+    log(f"saved EEPROM backup to {backup}")
+    return backup
+
+
+def maybe_reset_eeprom_device(ee) -> None:
+    try:
+        from usb.core import USBError
+    except Exception:
+        USBError = Exception  # type: ignore
+    try:
+        ee.reset_device()
+    except USBError as exc:  # type: ignore[misc]
+        if getattr(exc, "errno", None) != 2:
+            raise
+
+
+def ensure_valid_eeprom_image(ee, args: argparse.Namespace) -> None:
+    props = ee.properties
+    if args.initialize or not props:
+        log("initializing EEPROM image before applying settings")
+        ee._eeprom[:] = b"\x00" * len(ee._eeprom)
+        ee.initialize()
+        ee.set_property("power_max", args.power_max)
+        ee.set_property("self_powered", False)
+        ee.set_property("remote_wakeup", False)
+        ee.set_property("suspend_pull_down", False)
+        ee.set_property("out_isochronous", False)
+        ee.set_property("in_isochronous", False)
+
+
+def write_frameoscope_tag(url: str, serial: str, args: argparse.Namespace) -> None:
+    if not args.yes:
+        die("EEPROM programming is persistent. Re-run with --yes to write tags.")
+
+    ee = open_eeprom(url, args.size)
+    try:
+        backup_eeprom(ee, serial or url)
+        ensure_valid_eeprom_image(ee, args)
 
         ee.set_property("channel_a_type", "FIFO")
         ee.set_property("channel_a_driver", "D2XX")
+        ee.set_manufacturer_name(args.manufacturer)
         ee.set_product_name(args.product)
+        if not serial:
+            new_serial = make_serial()
+            log(f"assigning serial {new_serial}")
+            ee.set_serial_number(new_serial)
         ee.sync()
-        log("writing FT232H EEPROM FIFO/D2XX configuration")
+        log(f"writing Frameoscope EEPROM tag to {url}")
         ee.commit(dry_run=False)
-        try:
-            ee.reset_device()
-        except USBError as exc:
-            if getattr(exc, "errno", None) != 2:
-                raise
-        log("EEPROM updated; unplug/replug the board")
+        maybe_reset_eeprom_device(ee)
     finally:
         ee.close()
+
+
+def remove_frameoscope_tag(url: str, serial: str, args: argparse.Namespace) -> None:
+    if not args.yes:
+        die("EEPROM programming is persistent. Re-run with --yes to remove tags.")
+
+    ee = open_eeprom(url, args.size)
+    try:
+        backup_eeprom(ee, serial or url)
+        ensure_valid_eeprom_image(ee, args)
+        ee.set_manufacturer_name(args.manufacturer)
+        ee.set_product_name(args.product)
+        ee.sync()
+        log(f"removing Frameoscope EEPROM tag from {url}")
+        ee.commit(dry_run=False)
+        maybe_reset_eeprom_device(ee)
+    finally:
+        ee.close()
+
+
+def tag_devices(args: argparse.Namespace) -> int:
+    devices = list_ft232h_devices()
+    if not devices:
+        log("no FT232H devices found to tag")
+        return 0
+
+    wrote = 0
+    skipped = 0
+    for dev in devices:
+        product = str(dev["product"])
+        serial = str(dev["serial"])
+        url = dev["url"]
+        if dev["tagged"] and not args.refresh_tagged:
+            log(f"already tagged: serial={serial or '-'} product={product!r}")
+            skipped += 1
+            continue
+        if not isinstance(url, str):
+            log(f"skipping device without unique serial: product={product!r}")
+            skipped += 1
+            continue
+        log(f"tagging FT232H serial={serial or '-'} product={product!r}")
+        write_frameoscope_tag(url, serial, args)
+        wrote += 1
+        time.sleep(0.5)
+
+    log(f"tagging complete: wrote={wrote} skipped={skipped}")
     return 0
+
+
+def untag_devices(args: argparse.Namespace) -> int:
+    devices = [d for d in list_ft232h_devices() if d["tagged"]]
+    if not devices:
+        log("no tagged Frameoscope devices found")
+        return 0
+
+    for dev in devices:
+        url = dev["url"]
+        if not isinstance(url, str):
+            log(f"skipping tagged device without unique serial: product={dev['product']!r}")
+            continue
+        remove_frameoscope_tag(url, str(dev["serial"]), args)
+        time.sleep(0.5)
+    log("Frameoscope tags removed from connected devices")
+    return 0
+
+
+def program_eeprom(args: argparse.Namespace) -> int:
+    return tag_devices(args)
 
 
 def doctor(args: argparse.Namespace) -> int:
@@ -353,10 +501,19 @@ def doctor(args: argparse.Namespace) -> int:
     print(f"bridge source: {'ok' if BRIDGE_SRC.is_file() else 'missing'}")
     print(f"gcc: {shutil.which('gcc') or 'missing'}")
     print(f"pkg-config: {shutil.which('pkg-config') or 'missing'}")
-    print(f"device {VID:04x}:{PID:04x}: {'present' if device_present() else 'not present'}")
     try:
-        import_ftdi()
+        devices = list_ft232h_devices()
         print("pyftdi: ok")
+        if not devices:
+            print(f"device {VID:04x}:{PID:04x}: not present")
+        for dev in devices:
+            print(
+                "device "
+                f"serial={dev['serial'] or '-'} "
+                f"product={dev['product']!r} "
+                f"tagged={'yes' if dev['tagged'] else 'no'} "
+                f"url={dev['url'] or '-'}"
+            )
     except SystemExit:
         print("pyftdi: missing")
     return 0
@@ -375,13 +532,37 @@ def main(argv: list[str] | None = None) -> int:
     run.add_argument("--retry-seconds", type=float, default=2.0)
     run.set_defaults(func=run_service)
 
-    eeprom = sub.add_parser("program-eeprom", help="persistently configure FT232H channel A as FIFO/D2XX")
-    eeprom.add_argument("--url", default=DEFAULT_URL)
-    eeprom.add_argument("--size", type=int, default=256)
-    eeprom.add_argument("--power-max", type=int, default=500)
-    eeprom.add_argument("--product", default="Frameoscope 40MSPS")
-    eeprom.add_argument("--initialize", action="store_true")
-    eeprom.add_argument("--yes", action="store_true")
+    eeprom = sub.add_parser("program-eeprom", help="alias for tag-devices")
+    eeprom.set_defaults(func=program_eeprom, refresh_tagged=True,
+                        manufacturer=FRAMEOSCOPE_MANUFACTURER,
+                        product=FRAMEOSCOPE_PRODUCT)
+
+    tag = sub.add_parser("tag-devices", help="persistently mark connected FT232H devices as Frameoscope")
+    tag.add_argument("--size", type=int, default=256)
+    tag.add_argument("--power-max", type=int, default=500)
+    tag.add_argument("--manufacturer", default=FRAMEOSCOPE_MANUFACTURER)
+    tag.add_argument("--product", default=FRAMEOSCOPE_PRODUCT)
+    tag.add_argument("--initialize", action="store_true")
+    tag.add_argument("--refresh-tagged", action="store_true")
+    tag.add_argument("--yes", action="store_true")
+    tag.set_defaults(func=tag_devices)
+
+    untag = sub.add_parser("untag-devices", help="remove Frameoscope product tag from connected devices")
+    untag.add_argument("--size", type=int, default=256)
+    untag.add_argument("--power-max", type=int, default=500)
+    untag.add_argument("--manufacturer", default=GENERIC_MANUFACTURER)
+    untag.add_argument("--product", default=GENERIC_PRODUCT)
+    untag.add_argument("--initialize", action="store_true")
+    untag.add_argument("--yes", action="store_true")
+    untag.set_defaults(func=untag_devices)
+
+    for p in (eeprom,):
+        p.add_argument("--size", type=int, default=256)
+        p.add_argument("--power-max", type=int, default=500)
+        p.add_argument("--product", default=FRAMEOSCOPE_PRODUCT)
+        p.add_argument("--manufacturer", default=FRAMEOSCOPE_MANUFACTURER)
+        p.add_argument("--initialize", action="store_true")
+        p.add_argument("--yes", action="store_true")
     eeprom.set_defaults(func=program_eeprom)
 
     diag = sub.add_parser("doctor", help="check local files and dependencies")
