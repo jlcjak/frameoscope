@@ -14,7 +14,7 @@ oscilloscope expansion card / module for framework laptops
 I have built and tested frameoscope, it works! I made it compatible with ngscopeclient.
 Here is how to use it:
 1. install [ngscopeclient](https://github.com/ngscopeclient/scopehal-apps/releases/)
-2. run: `curl -fsSL frame.fasterscope.com/install.sh | bash` (Source code in "/software")
+2. plug in frameoscope and run: `curl -fsSL frame.fasterscope.com/install.sh | bash` (Source code in "/software")
 
 That's it, now ngscopeclient should see frameoscope as an oscilloscope
 
