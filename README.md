@@ -10,6 +10,21 @@ oscilloscope expansion card / module for framework laptops
 - front end Cin: ~5pF
 - input voltage: 0-5V (protected from reverse and high voltage)
 
+## How to use
+I have built and tested frameoscope, it works! I made it compatible with ngscopeclient.
+Here is how to use it:
+1. install [ngscopeclient](https://github.com/ngscopeclient/scopehal-apps/releases/)
+2. run: `curl -fsSL frame.fasterscope.com/install.sh | bash` (Source code in "/software")
+
+That's it, now ngscopeclient should see frameoscope as an oscilloscope
+
+to uninstall: `curl -fsSL frame.fasterscope.com/uninstall.sh | bash`
+
+this works on ubuntu 24, for other distros clone this repo and ask codex(/your agent of choice) to make it work
+
+The script installs, starts and enables a service that will flash frameoscope upon insertion
+and start a bridge that translates the stream into ngscopeclient compatible packets
+
 ## Remarks
 - The board is mainly comprimized of a TI adc, an iCE40 fpga and a usb PHY (FT232H).
 - The fpga is used as an protocol tranlator between the busses on the usb PHY and adc.
@@ -20,4 +35,6 @@ oscilloscope expansion card / module for framework laptops
 - all components are sourcable from lcsc, for easy assembly in china
 
 ![Alt text](frameoscope_schematic.png)
+![Alt text](ngscopeclient_screenshot.png)
 ![Alt text](frameoscope_render.png)
+![Alt text](image_real.png)
