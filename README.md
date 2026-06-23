@@ -1,6 +1,8 @@
 # frameoscope
 oscilloscope expansion card / module for framework laptops 
 
+[frame.fasterscope.com](frame.fasterscope.com)
+
 ## Tech Specs
 - sampling rate: 40MSPS
 - bandwidth: 10MHz
