@@ -34,7 +34,10 @@ and start a bridge that translates the stream into ngscopeclient compatible pack
 - There is no flash on the fpga so you need to reprogram it on reset or use iCE nvcm
 
 ## manufacturing
-- all components are sourcable from lcsc, for easy assembly in china
+- all components are sourcable from lcsc, for easy assembly in china.
+- use a 0.8mm board so you can solder on the usb connector
+
+Nextpcb sponsored the first iteration of this projec, thanks nextpcb. you can easily use them to make this for very cheap. They are professional, fast and cheap. [nextpcb.com](nextpcb.com)
 
 ![Alt text](frameoscope_schematic.png)
 ![Alt text](ngscopeclient_screenshot.png)
