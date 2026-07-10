@@ -37,7 +37,7 @@ and start a bridge that translates the stream into ngscopeclient compatible pack
 - all components are sourcable from lcsc, for easy assembly in china.
 - use a 0.8mm board so you can solder on the usb connector
 
-Nextpcb sponsored the first iteration of this project, thanks nextpcb. you can easily use them to make this for very cheap. They are professional, fast and cheap. [nextpcb.com](nextpcb.com)
+Nextpcb sponsored the first iteration of this project, thanks nextpcb. you can easily use them to make this for very cheap. They are professional, fast and cheap. [nextpcb.com](https://www.nextpcb.com/?code=Jak)
 
 ![Alt text](frameoscope_schematic.png)
 ![Alt text](ngscopeclient_screenshot.png)
