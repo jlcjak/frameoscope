@@ -1,6 +1,8 @@
 # frameoscope
 oscilloscope expansion card / module for framework laptops 
 
+[frame.fasterscope.com](https://frame.fasterscope.com)
+
 ## Tech Specs
 - sampling rate: 40MSPS
 - bandwidth: 10MHz
@@ -14,7 +16,7 @@ oscilloscope expansion card / module for framework laptops
 I have built and tested frameoscope, it works! I made it compatible with ngscopeclient.
 Here is how to use it:
 1. install [ngscopeclient](https://github.com/ngscopeclient/scopehal-apps/releases/)
-2. run: `curl -fsSL frame.fasterscope.com/install.sh | bash` (Source code in "/software")
+2. plug in frameoscope and run: `curl -fsSL frame.fasterscope.com/install.sh | bash` (Source code in "/software")
 
 That's it, now ngscopeclient should see frameoscope as an oscilloscope
 
@@ -32,7 +34,10 @@ and start a bridge that translates the stream into ngscopeclient compatible pack
 - There is no flash on the fpga so you need to reprogram it on reset or use iCE nvcm
 
 ## manufacturing
-- all components are sourcable from lcsc, for easy assembly in china
+- all components are sourcable from lcsc, for easy assembly in china.
+- use a 0.8mm board so you can solder on the usb connector
+
+Nextpcb sponsored the first iteration of this project, thanks nextpcb. you can easily use them to make this for very cheap. They are professional, fast and cheap. [nextpcb.com](https://www.nextpcb.com/?code=Jak)
 
 ![Alt text](frameoscope_schematic.png)
 ![Alt text](ngscopeclient_screenshot.png)
