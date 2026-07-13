@@ -57,10 +57,6 @@ fp-info-cache
 *.csv
 *.pdf
 
-# 3D exports
-*.step
-*.stp
-*.wrl
 
 # Netlists / XML exports
 *.net
